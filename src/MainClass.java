@@ -7,6 +7,8 @@ public class MainClass {
         // 클래스를 불러서 사용
         NameSet ns = new NameSet();
         ns.setName(); // 클래스이름 . < 붙이기 (이름 설정 기능
+        //아이템 설정
+        ns.setItem();
 //        System.out.println(ns.n+"꺼져~");
 //        ns.n = "오늘?";
 //        System.out.println(ns.n+"이리와~");
@@ -17,6 +19,8 @@ public class MainClass {
         PlayClass pc = new PlayClass();
         //pc.play1(안에서는 쌍따옴표>>""만 치면 앞에있는n을 가져옴)
         // 투명한건 따라치는거 아님 ㅋ
-        pc.play1(n);
+        int num = pc.play1(n);
+        num = pc.play2(num);
+        pc.play3(num);
     }
 }
